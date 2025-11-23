@@ -55,6 +55,8 @@ minikube start
 **Crucial Step:** We need to build the image *inside* Minikube's Docker environment so the cluster can see it.
 ```bash
 eval $(minikube docker-env)
+```
+```
 docker build -t ml-model:v1 .
 ```
 
