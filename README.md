@@ -52,13 +52,14 @@ minikube start
 ```
 
 ### 2. Build the Docker Image
-**Crucial Step:** We need to build the image *inside* Minikube's Docker environment so the cluster can see it.
+**Crucial Step:** Normally, if you use Docker build, the image is installed on your computer. But Kubernetes (Minikube) can't see it. We need to install it in Docker inside Minikube.
 ```bash
 eval $(minikube docker-env)
 ```
 ```
 docker build -t ml-model:v1 .
 ```
+Expected Status: The steps in the Dockerfile flow (Python is downloaded, libraries are installed). At the end, it says Successfully tagged ml-model:v1.
 
 ### 3. Deploy to Kubernetes
 Send the instructions (Manifest) to the "Captain" (Control Plane).
