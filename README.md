@@ -129,7 +129,7 @@ To demonstrate Kubernetes' resilience during the presentation:
 
 To release memory:
 ```bash
-    minikube stop
+minikube stop
 ```
 ---
 
