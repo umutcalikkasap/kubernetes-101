@@ -125,13 +125,13 @@ To demonstrate Kubernetes' resilience during the presentation:
 
 ---
 
-## Cleaning Time
+## Cleaning Time 🧹
 
 To release memory:
 ```bash
     minikube stop
-    ```
-
+```
+---
 
 ## 👨‍💻 Author
 **Umut Çalıkkasap**
